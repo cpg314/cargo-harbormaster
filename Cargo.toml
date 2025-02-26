@@ -2,17 +2,17 @@
 name = "cargo-harbormaster"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT OR Apache-2.0"
+description = "Export diagnostics from cargo check, cargo clippy and cargo nextest into the JSON message format expected by Phabricator's Harbormaster."
+repository = "https://github.com/cpg314/cargo-harbormaster"
+categories = ["development-tools", "command-line-utilities", "development-tools::cargo-plugins"]
 
 [dependencies]
 anyhow = "1.0.75"
 cargo_metadata = "0.18.0"
 clap = { version = "4.4.3", features = ["derive", "env"] }
 env_logger = "0.10.0"
-itertools = "0.11.0"
 log = "0.4.20"
-prettydiff = "0.6.4"
 regex = "1.9.5"
 serde = { version = "1.0.188", features = ["derive"] }
 serde_json = "1.0.107"
